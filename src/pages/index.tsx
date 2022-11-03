@@ -93,7 +93,7 @@ export default function Home(props: HomeProps) {
   )
 }
 
-export const getServerSideProps = async () =>{
+export async function getStaticProps() {
   const [
     poolCountResponse,
     guessCountResponse, 
